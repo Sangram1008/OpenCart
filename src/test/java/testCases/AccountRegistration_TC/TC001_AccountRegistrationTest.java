@@ -1,20 +1,9 @@
 package testCases.AccountRegistration_TC;
 
-import net.bytebuddy.utility.RandomString;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
-import utilites.randomValueGenerator;
-
-import java.time.Duration;
 
 public class TC001_AccountRegistrationTest extends baseClass {
 
@@ -23,30 +12,62 @@ public class TC001_AccountRegistrationTest extends baseClass {
     private String firstName = bc.randomString(5);
     private String lastName = bc.randomString(5);
     private String email = randomString(5) + "@gmail.com";
+    private String phone = bc.randomNumber(10);
     private String password = randomAlphanumericPassword(4);
-    private String conformationText = "Your Account Has Been Created!";
-
+    public String conformationText = "Your Account Has Been Created!";
 
     @Test
     public void verify_Account_Reg() {
-        HomePage hp = new HomePage(driver);
 
-        AccountRegistrationPage arp = new AccountRegistrationPage(driver);
+        logger.info("Starting TC001_AccountRegistrationTest");
 
-        hp.clickMyAccount();
-        hp.clickRegister();
+        try {
 
-        arp.setRegFirstName(firstName);
-        arp.setRegLastName(lastName);
+            HomePage hp = new HomePage(driver);
 
-        arp.setRegEmail(email);
-        arp.setRegPassword(password);
+            AccountRegistrationPage arp = new AccountRegistrationPage(driver);
 
-        arp.clickAgreeBtn();
-        arp.clickContinue();
+            logger.info("Setting Customer Details");
 
-        String confirmationText = arp.getConformation();
-        Assert.assertEquals(confirmationText, this.conformationText);
+            hp.clickMyAccount();
 
+            hp.clickRegister();
+
+            waitElement(arp.reg_firstName, 10, "visibility");
+            arp.setRegFirstName(firstName);
+
+            waitElement(arp.reg_lastName, 10, "visibility");
+            arp.setRegLastName(lastName);
+
+            waitElement(arp.reg_email, 10, "visibility");
+            arp.setRegEmail(email);
+
+            arp.setRegTelephone(phone);
+
+            waitElement(arp.reg_password, 10, "visibility");
+            arp.setRegPassword(password);
+
+            arp.setConfirmPassword(password);
+
+            arp.clickAgreeBtn();
+
+            waitElement(arp.reg_continue, 20, "visibility");
+            arp.clickContinue();
+
+            logger.info("Setting Customer Details");
+
+            String conformationMsg = arp.getConformation();
+            if (conformationMsg.equals(conformationMsg)) {
+                Assert.assertEquals(conformationMsg, conformationText, "conformationMsg Matched");
+            } else {
+                logger.error("Test Failed");
+                logger.debug("Debug logs..");
+            }
+
+
+        } catch (Exception e) {
+            Assert.fail();
+        }
+        logger.info("Finished TC001_AccountRegistrationTest");
     }
 }

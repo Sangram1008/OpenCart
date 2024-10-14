@@ -1,7 +1,6 @@
 package pageObjects;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
@@ -10,10 +9,10 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@class=\"list-inline-item\"]//span[normalize-space()='My Account']")
+    @FindBy(xpath = "//span[normalize-space()='My Account']")
     public WebElement home_myAccount;
 
-    @FindBy(xpath = "//a[normalize-space()='Register'][@class='dropdown-item']")
+    @FindBy(xpath = "//a[normalize-space()='Register']")
     public WebElement home_Register;
 
     public void clickMyAccount() {

@@ -1,7 +1,6 @@
 package pageObjects;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
 public class AccountRegistrationPage extends BasePage {
@@ -11,26 +10,31 @@ public class AccountRegistrationPage extends BasePage {
     }
 
     @FindBy(xpath = "//input[@id='input-firstname']")
-    WebElement reg_firstName;
+    public WebElement reg_firstName;
 
     @FindBy(xpath = "//input[@id='input-lastname']")
-    WebElement reg_lastName;
+    public WebElement reg_lastName;
 
     @FindBy(xpath = "//input[@id='input-email']")
-    WebElement reg_email;
+    public WebElement reg_email;
+
+    @FindBy(xpath = "//*[@id='input-telephone']")
+    public WebElement reg_Telephone;
 
     @FindBy(xpath = "//input[@id='input-password']")
-    WebElement reg_password;
+    public WebElement reg_password;
+
+    @FindBy(xpath = "//*[@id='input-confirm']")
+    public WebElement reg_confirmPassword;
 
     @FindBy(xpath = "//input[@name='agree']")
-    WebElement reg_agree;
+    public WebElement reg_agree;
 
-    @FindBy(xpath = "//button[normalize-space()='Continue']")
-    WebElement reg_continue;
+    @FindBy(xpath="//input[@value='Continue']")
+    public WebElement reg_continue;
 
-    @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created']")
+    @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
     WebElement reg_msgConfirmation;
-
 
     public void setRegFirstName(String name) {
         reg_firstName.sendKeys(name);
@@ -44,8 +48,16 @@ public class AccountRegistrationPage extends BasePage {
         reg_email.sendKeys(email);
     }
 
+    public void setRegTelephone(String phone) {
+        reg_Telephone.sendKeys(phone);
+    }
+
     public void setRegPassword(String password) {
         reg_password.sendKeys(password);
+    }
+
+    public void setConfirmPassword(String password) {
+        reg_confirmPassword.sendKeys(password);
     }
 
     public void clickAgreeBtn() {
@@ -53,7 +65,28 @@ public class AccountRegistrationPage extends BasePage {
     }
 
     public void clickContinue() {
+
+        //sol1
         reg_continue.click();
+
+        //sol2
+        //reg_continue.submit();
+
+        //sol3
+        //Actions act=new Actions(driver);
+        //act.moveToElement(btnContinue).click().perform();
+
+        //sol4
+        //JavascriptExecutor js=(JavascriptExecutor)driver;
+        //js.executeScript("arguments[0].click();", reg_continue);
+
+        //Sol 5
+        //btnContinue.sendKeys(Keys.RETURN);
+
+        //Sol6
+        //WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        //mywait.until(ExpectedConditions.elementToBeClickable(reg_continue)).click();
+
     }
 
     public String getConformation() {
