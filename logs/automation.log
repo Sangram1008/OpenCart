@@ -1,0 +1,17 @@
+2024-10-15 21:29:29 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-15 21:32:50 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-15 21:33:06 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-15 21:33:15 INFO  TC001_AccountRegistrationTest:22 - Starting TC001_AccountRegistrationTest
+2024-10-15 21:33:15 INFO  TC001_AccountRegistrationTest:30 - Setting Customer Details
+2024-10-15 21:33:18 INFO  TC001_AccountRegistrationTest:57 - Setting Customer Details
+2024-10-15 21:33:18 INFO  TC001_AccountRegistrationTest:71 - Finished TC001_AccountRegistrationTest
+2024-10-15 21:33:23 INFO  TC001_AccountRegistrationTest:22 - Starting TC001_AccountRegistrationTest
+2024-10-15 21:33:23 INFO  TC001_AccountRegistrationTest:30 - Setting Customer Details
+2024-10-15 21:33:25 INFO  TC001_AccountRegistrationTest:57 - Setting Customer Details
+2024-10-15 21:33:25 INFO  TC001_AccountRegistrationTest:71 - Finished TC001_AccountRegistrationTest

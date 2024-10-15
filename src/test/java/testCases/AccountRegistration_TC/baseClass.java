@@ -6,34 +6,54 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.Duration;
-import java.util.function.Function;
+import java.util.Properties;
 
 public class baseClass {
 
     public WebDriver driver;
 
-    public Logger logger; // Log4j
+    // Log4j
+    public Logger logger;
     Actions actions;
-
-    Wait<WebDriver> fluentWait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(70))         // Maximum wait time
-            .pollingEvery(Duration.ofSeconds(10))         // Frequency to check condition
-            .ignoring(Exception.class);                  // Exceptions to ignore (e.g., NoSuchElementException)
+    public Properties properties = new Properties();
 
     @BeforeClass
-    public void setUp() {
+    @Parameters({"browser"})
+    public void setUp(String br) throws IOException {
 
         // get Dynamic class
         logger = LogManager.getLogger(this.getClass());
 
-        driver = new ChromeDriver();
+        // Read properties file
+        FileReader file = new FileReader("./src//test/resources//config.properties");
+
+        properties.load(file);
+
+        switch (br.toLowerCase()) {
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
+            case "edge":
+                driver = new EdgeDriver();
+                break;
+            default:
+                System.out.println("Invalid browser..");
+                return;
+        }
+
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://tutorialsninja.com/demo/");
+
+        //Reading URL from properties file
+        driver.get(properties.getProperty("appUrl"));
         driver.manage().window().maximize();
     }
 
@@ -54,14 +74,6 @@ public class baseClass {
         String value = RandomStringUtils.randomAlphabetic(count);
         String number = RandomStringUtils.randomNumeric(count);
         return value + "@" + number;
-    }
-
-    public WebElement fluentWait(final By locator) {
-        return fluentWait.until(new Function<WebDriver, WebElement>() {
-            public WebElement apply(WebDriver driver) {
-                return driver.findElement(locator);
-            }
-        });
     }
 
     public void waitElement(WebElement element, int count, String conditionType) {
@@ -89,7 +101,7 @@ public class baseClass {
                     wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loader"))); // Example ID of loader
                     element.click();
                     break;
-                case "jsClick":
+                case "jsclick":
                     JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
                     jsExecutor.executeScript("arguments[0].click();", element);
                     break;
@@ -97,7 +109,7 @@ public class baseClass {
                     actions = new Actions(driver);
                     actions.moveToElement(element).click().build().perform();
                     break;
-                case "JavascriptExecutorClick":
+                case "javascriptexecutorclick":
                     ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
                     break;
                 default:
