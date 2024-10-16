@@ -1,4 +1,4 @@
-package testCases.AccountRegistration_TC;
+package testCases.OpenCart;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -41,9 +41,9 @@ public class baseClass {
             case "chrome":
                 driver = new ChromeDriver();
                 break;
-            case "edge":
-                driver = new EdgeDriver();
-                break;
+//            case "edge":
+//                driver = new EdgeDriver();
+//                break;
             default:
                 System.out.println("Invalid browser..");
                 return;

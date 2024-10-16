@@ -1,17 +1,303 @@
-2024-10-15 21:29:29 INFO  Utils:112 - [TestNG] Running:
+2024-10-16 16:09:15 INFO  Utils:112 - [TestNG] Running:
   C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
 
-2024-10-15 21:32:50 INFO  Utils:112 - [TestNG] Running:
+2024-10-16 16:09:15 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 16:09:15 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 16:09:27 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 16:09:27 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 16:09:29 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 16:09:29 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 16:53:27 INFO  Utils:112 - [TestNG] Running:
   C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
 
-2024-10-15 21:33:06 INFO  Utils:112 - [TestNG] Running:
+2024-10-16 16:53:36 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 16:53:36 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 16:53:40 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 16:53:40 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 16:58:47 INFO  Utils:112 - [TestNG] Running:
   C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
 
-2024-10-15 21:33:15 INFO  TC001_AccountRegistrationTest:22 - Starting TC001_AccountRegistrationTest
-2024-10-15 21:33:15 INFO  TC001_AccountRegistrationTest:30 - Setting Customer Details
-2024-10-15 21:33:18 INFO  TC001_AccountRegistrationTest:57 - Setting Customer Details
-2024-10-15 21:33:18 INFO  TC001_AccountRegistrationTest:71 - Finished TC001_AccountRegistrationTest
-2024-10-15 21:33:23 INFO  TC001_AccountRegistrationTest:22 - Starting TC001_AccountRegistrationTest
-2024-10-15 21:33:23 INFO  TC001_AccountRegistrationTest:30 - Setting Customer Details
-2024-10-15 21:33:25 INFO  TC001_AccountRegistrationTest:57 - Setting Customer Details
-2024-10-15 21:33:25 INFO  TC001_AccountRegistrationTest:71 - Finished TC001_AccountRegistrationTest
+2024-10-16 16:58:56 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 16:58:56 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 16:59:00 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 16:59:00 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 16:59:09 INFO  TC001_LoginTest:17 - ******* Starting Login Test Case *******
+2024-10-16 16:59:15 INFO  TC_LF_002:16 - ******* Starting TC_LF_002 *******
+2024-10-16 17:24:24 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 17:24:34 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 17:24:34 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 17:24:39 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 17:24:39 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 17:24:49 INFO  TC001_LoginTest:17 - ******* Starting Login Test Case *******
+2024-10-16 17:24:54 INFO  TC_LF_002:16 - ******* Starting TC_LF_002 *******
+2024-10-16 17:35:02 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 17:35:08 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 17:35:08 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 17:35:13 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 17:35:13 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 17:35:22 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 17:35:32 INFO  TC_LF_002:18 - ******* Starting TC_LF_002 *******
+2024-10-16 17:38:52 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\AppData\Local\JetBrains\IdeaIC2023.3\temp-testng-customsuite.xml
+
+2024-10-16 17:39:09 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\AppData\Local\JetBrains\IdeaIC2023.3\temp-testng-customsuite.xml
+
+2024-10-16 17:48:46 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 17:48:55 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 17:50:46 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 17:50:52 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 17:52:55 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 17:53:03 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 17:55:00 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 17:55:06 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 17:59:02 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 17:59:08 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 18:00:09 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 18:00:16 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 18:00:16 INFO  TC001_LoginTest:49 - ******* Finished Login Test Case *******
+2024-10-16 18:01:01 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 18:01:06 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 18:01:21 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 18:01:26 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 18:02:17 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 18:02:23 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 18:08:23 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 18:08:43 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:12:57 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\AppData\Local\JetBrains\IdeaIC2023.3\temp-testng-customsuite.xml
+
+2024-10-16 20:13:41 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:13:54 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:14:59 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:15:07 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:17:01 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:17:06 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:18:04 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:18:08 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:18:34 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:18:38 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:19:40 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:19:45 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:20:38 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:20:42 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:22:11 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:22:15 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:22:55 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:22:59 INFO  TC001_LoginTest:15 - ******* Starting Login Test Case *******
+2024-10-16 20:23:01 INFO  TC001_LoginTest:42 - ******* Finished Login Test Case *******
+2024-10-16 20:30:41 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:30:48 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:30:51 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:30:55 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:31:00 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:32:46 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:32:51 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:32:53 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:32:57 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:32:58 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:33:02 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:34:31 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:34:36 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:34:37 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:34:41 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:34:43 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:34:47 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:35:30 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:35:34 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:35:36 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:35:40 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:35:42 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:35:45 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:36:29 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:36:34 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:36:36 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:36:40 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:36:41 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:36:45 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:41:27 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:41:33 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:41:35 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:41:39 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:41:41 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:41:45 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:42:38 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:42:42 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:42:44 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:42:48 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:42:49 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:42:53 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:44:20 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:44:24 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:44:26 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:44:30 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:44:31 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:44:35 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 20:50:44 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 20:50:48 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 20:50:50 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 20:50:54 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 20:50:56 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 20:51:00 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 21:47:37 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 21:47:47 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 21:47:48 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 21:47:52 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 21:47:53 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 21:47:56 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 21:47:57 INFO  TC_LF_008:42 - ******* Starting TC_LF_008 *******
+2024-10-16 22:01:06 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 22:01:10 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 22:01:11 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 22:01:12 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 22:01:12 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 22:01:16 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 22:01:18 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 22:01:21 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 22:01:23 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 22:01:26 INFO  TC_LF_003:19 - ******* Starting TC_LF_003 *******
+2024-10-16 22:01:31 INFO  TC_LF_004:18 - ******* Starting TC_LF_004 *******
+2024-10-16 22:01:36 INFO  TC_LF_005:18 - ******* Starting TC_LF_005 *******
+2024-10-16 22:01:41 INFO  TC_LF_007:21 - ******* Starting TC_LF_007 *******
+2024-10-16 22:01:45 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 22:01:45 INFO  TC_LF_008:41 - ******* Starting TC_LF_008 *******
+2024-10-16 22:05:04 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 22:05:08 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 22:05:08 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 22:05:10 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 22:05:10 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 22:05:13 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 22:05:15 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 22:05:18 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 22:05:19 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 22:05:23 INFO  TC_LF_003:19 - ******* Starting TC_LF_003 *******
+2024-10-16 22:05:24 INFO  TC_LF_003:41 - ******* Finished TC_LF_003 *******
+2024-10-16 22:05:28 INFO  TC_LF_004:18 - ******* Starting TC_LF_004 *******
+2024-10-16 22:05:29 INFO  TC_LF_004:40 - ******* Finished TC_LF_004 *******
+2024-10-16 22:05:32 INFO  TC_LF_005:18 - ******* Starting TC_LF_005 *******
+2024-10-16 22:05:33 INFO  TC_LF_005:40 - ******* Finished TC_LF_005 *******
+2024-10-16 22:05:37 INFO  TC_LF_006:19 - ******* Starting TC_LF_006 *******
+2024-10-16 22:05:38 INFO  TC_LF_006:37 - ******* Starting TC_LF_006 *******
+2024-10-16 22:05:41 INFO  TC_LF_007:21 - ******* Starting TC_LF_007 *******
+2024-10-16 22:05:45 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 22:05:46 INFO  TC_LF_008:41 - ******* Starting TC_LF_008 *******
+2024-10-16 22:06:27 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 22:06:31 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 22:06:31 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 22:06:33 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 22:06:33 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 22:06:37 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 22:06:38 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 22:06:42 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 22:06:43 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 22:06:47 INFO  TC_LF_003:19 - ******* Starting TC_LF_003 *******
+2024-10-16 22:06:48 INFO  TC_LF_003:41 - ******* Finished TC_LF_003 *******
+2024-10-16 22:06:52 INFO  TC_LF_004:18 - ******* Starting TC_LF_004 *******
+2024-10-16 22:06:53 INFO  TC_LF_004:40 - ******* Finished TC_LF_004 *******
+2024-10-16 22:06:57 INFO  TC_LF_005:18 - ******* Starting TC_LF_005 *******
+2024-10-16 22:06:58 INFO  TC_LF_005:40 - ******* Finished TC_LF_005 *******
+2024-10-16 22:07:02 INFO  TC_LF_006:19 - ******* Starting TC_LF_006 *******
+2024-10-16 22:07:03 INFO  TC_LF_006:37 - ******* Starting TC_LF_006 *******
+2024-10-16 22:07:06 INFO  TC_LF_007:21 - ******* Starting TC_LF_007 *******
+2024-10-16 22:07:10 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 22:07:11 INFO  TC_LF_008:41 - ******* Starting TC_LF_008 *******
+2024-10-16 22:14:37 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 22:14:45 INFO  TC_LF_007:21 - ******* Starting TC_LF_007 *******
+2024-10-16 22:18:05 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 22:18:09 INFO  TC_LF_007:24 - ******* Starting TC_LF_007 *******
+2024-10-16 22:18:10 INFO  TC_LF_007:59 - ******* Starting TC_LF_007 *******
+2024-10-16 22:19:23 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\sangram.magdum\Desktop\New folder\HybridFrameWork\openCart\crossbrowsertesting.xml
+
+2024-10-16 22:19:27 INFO  TC001_AccountRegistrationTest:23 - Starting TC001_AccountRegistrationTest
+2024-10-16 22:19:27 INFO  TC001_AccountRegistrationTest:31 - Setting Customer Details
+2024-10-16 22:19:29 INFO  TC001_AccountRegistrationTest:58 - Setting Customer Details
+2024-10-16 22:19:29 INFO  TC001_AccountRegistrationTest:70 - Finished TC001_AccountRegistrationTest
+2024-10-16 22:19:32 INFO  TC001_LoginTest:19 - ******* Starting Login Test Case *******
+2024-10-16 22:19:34 INFO  TC001_LoginTest:47 - ******* Finished Login Test Case *******
+2024-10-16 22:19:39 INFO  TC_LF_002:19 - ******* Starting TC_LF_002 *******
+2024-10-16 22:19:40 INFO  TC_LF_002:40 - ******* Ending TC_LF_002 *******
+2024-10-16 22:19:44 INFO  TC_LF_003:19 - ******* Starting TC_LF_003 *******
+2024-10-16 22:19:45 INFO  TC_LF_003:41 - ******* Finished TC_LF_003 *******
+2024-10-16 22:19:49 INFO  TC_LF_004:18 - ******* Starting TC_LF_004 *******
+2024-10-16 22:19:50 INFO  TC_LF_004:40 - ******* Finished TC_LF_004 *******
+2024-10-16 22:19:53 INFO  TC_LF_005:18 - ******* Starting TC_LF_005 *******
+2024-10-16 22:19:55 INFO  TC_LF_005:40 - ******* Finished TC_LF_005 *******
+2024-10-16 22:19:58 INFO  TC_LF_006:19 - ******* Starting TC_LF_006 *******
+2024-10-16 22:19:59 INFO  TC_LF_006:37 - ******* Starting TC_LF_006 *******
+2024-10-16 22:20:04 INFO  TC_LF_007:24 - ******* Starting TC_LF_007 *******
+2024-10-16 22:20:07 INFO  TC_LF_007:59 - ******* Starting TC_LF_007 *******
+2024-10-16 22:20:12 INFO  TC_LF_008:20 - ******* Starting TC_LF_008 *******
+2024-10-16 22:20:12 INFO  TC_LF_008:41 - ******* Starting TC_LF_008 *******

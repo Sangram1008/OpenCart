@@ -1,9 +1,10 @@
-package testCases.AccountRegistration_TC;
+package testCases.OpenCart.AccountRegistrationTestCase;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
+import testCases.OpenCart.baseClass;
 
 public class TC001_AccountRegistrationTest extends baseClass {
 
@@ -63,8 +64,6 @@ public class TC001_AccountRegistrationTest extends baseClass {
                 logger.error("Test Failed");
                 logger.debug("Debug logs..");
             }
-
-
         } catch (Exception e) {
             Assert.fail();
         }
