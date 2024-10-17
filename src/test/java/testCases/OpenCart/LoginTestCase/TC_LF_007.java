@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
-import testCases.OpenCart.baseClass;
+import testBase.BaseClass;
 import testCases.OpenCart.constantText.textFile;
 
-public class TC_LF_007 extends baseClass {
+public class TC_LF_007 extends BaseClass {
 
     textFile tf;
     HomePage hp;
@@ -18,7 +18,7 @@ public class TC_LF_007 extends baseClass {
     MyAccountPage ap;
     Actions action;
 
-    @Test
+    @Test(groups = "Master")
     public void validate_logging_Application_using_Keyboard_keys() {
         logger.info("******* Starting TC_LF_007 *******");
 
@@ -55,6 +55,6 @@ public class TC_LF_007 extends baseClass {
             Assert.fail();
         }
 
-        logger.info("******* Starting TC_LF_007 *******");
+        logger.info("******* Finished TC_LF_007 *******");
     }
 }

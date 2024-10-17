@@ -4,16 +4,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import testCases.OpenCart.baseClass;
+import testBase.BaseClass;
 import testCases.OpenCart.constantText.textFile;
 
-public class TC_LF_006 extends baseClass {
+public class TC_LF_006 extends BaseClass {
 
     textFile tf;
     HomePage hp;
     LoginPage lp;
 
-    @Test
+    @Test(groups = "Master")
     public void validate_Forgotten_Password_link() {
 
         logger.info("******* Starting TC_LF_006 *******");
@@ -34,6 +34,6 @@ public class TC_LF_006 extends baseClass {
             Assert.fail();
         }
 
-        logger.info("******* Starting TC_LF_006 *******");
+        logger.info("******* Finished TC_LF_006 *******");
     }
 }

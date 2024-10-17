@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Master Suite">
+    <groups>
+        <run>
+            <include name="Master"/>
+            <!--            <include name="Regression"/>-->
+            <!--            <include name="Sanity"/>-->
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="utilites.ExtentReportUtility"/>
+    </listeners>
+
+    <test name="Grouping" thread-count="5">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="testCases.OpenCart.LoginTestCase.TC001_LoginTest"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_002"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_003"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_004"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_005"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_006"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_007"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_008"></class>
+        </classes>
+    </test>
+</suite>

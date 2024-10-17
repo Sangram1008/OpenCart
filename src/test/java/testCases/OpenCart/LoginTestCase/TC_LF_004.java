@@ -4,16 +4,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import testCases.OpenCart.baseClass;
+import testBase.BaseClass;
 import testCases.OpenCart.constantText.textFile;
 
-public class TC_LF_004 extends baseClass {
+public class TC_LF_004 extends BaseClass {
 
 
     textFile tf;
     HomePage hp;
     LoginPage lp;
-    @Test
+    @Test(groups = "Master")
     public void with_validEmail_inValidPassword() {
         logger.info("******* Starting TC_LF_004 *******");
 
@@ -30,7 +30,6 @@ public class TC_LF_004 extends baseClass {
             lp.loginButton();
 
             boolean checkErrorText = lp.checkErrorText(tf.loginErrorText);
-
 
             Assert.assertEquals(checkErrorText,true,"checkErrorText is not Present");
         } catch (Exception e) {

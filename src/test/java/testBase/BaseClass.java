@@ -1,4 +1,4 @@
-package testCases.OpenCart;
+package testBase;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -6,26 +6,28 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
-public class baseClass {
+public class BaseClass {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     // Log4j
     public Logger logger;
     Actions actions;
     public Properties properties = new Properties();
 
-    @BeforeClass
+    @BeforeClass(groups = {"Master", "Sanity", "Regression"})
     @Parameters({"browser"})
     public void setUp(String br) throws IOException {
 
@@ -57,7 +59,7 @@ public class baseClass {
         driver.manage().window().maximize();
     }
 
-    @AfterClass
+    @AfterClass(groups = {"Master", "Sanity", "Regression"})
     public void tearDown() {
         driver.quit();
     }
@@ -118,5 +120,21 @@ public class baseClass {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public String captureScreen(String name) throws IOException {
+
+        String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+
+        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+
+        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+
+        String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + name + "_" + timeStamp + ".png";
+        File targetFile = new File(targetFilePath);
+
+        sourceFile.renameTo(targetFile);
+
+        return targetFilePath;
     }
 }

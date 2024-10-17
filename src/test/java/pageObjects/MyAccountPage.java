@@ -14,6 +14,9 @@ public class MyAccountPage extends BasePage {
     @FindBy(xpath = "//h2[text()='My Account']")
     public WebElement myAccountText;
 
+    @FindBy(xpath = "//div[@class='list-group']//a[text()='Logout']")   //added in step6
+    WebElement lnkLogout;
+
     public boolean isMyAccountExists() {
         try {
             return (myAccountText.isDisplayed());
@@ -24,6 +27,10 @@ public class MyAccountPage extends BasePage {
             logger.error("An unexpected error occurred while checking if 'My Account' exists: ", e);
             return false;
         }
+    }
+
+    public void clickLogOut() {
+        lnkLogout.click();
     }
 
 }

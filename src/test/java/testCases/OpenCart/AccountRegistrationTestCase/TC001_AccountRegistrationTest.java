@@ -4,11 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
-import testCases.OpenCart.baseClass;
+import testBase.BaseClass;
 
-public class TC001_AccountRegistrationTest extends baseClass {
+public class TC001_AccountRegistrationTest extends BaseClass {
 
-    baseClass bc = new baseClass();
+    BaseClass bc = new BaseClass();
 
     private String firstName = bc.randomString(5);
     private String lastName = bc.randomString(5);
@@ -17,7 +17,7 @@ public class TC001_AccountRegistrationTest extends baseClass {
     private String password = randomAlphanumericPassword(4);
     public String conformationText = "Your Account Has Been Created!";
 
-    @Test
+    @Test(groups = {"Regression","Master"})
     public void verify_Account_Reg() {
 
         logger.info("Starting TC001_AccountRegistrationTest");

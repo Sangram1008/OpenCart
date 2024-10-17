@@ -5,15 +5,15 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
-import testCases.OpenCart.baseClass;
+import testBase.BaseClass;
 
-public class TC001_LoginTest extends baseClass {
+public class TC001_LoginTest extends BaseClass {
 
     HomePage hp;
     MyAccountPage ap;
     LoginPage lp;
 
-    @Test
+    @Test(groups = "Master")
     public void verify_Login() {
 
         logger.info("******* Starting Login Test Case *******");

@@ -5,15 +5,16 @@
         <!--        <parameter name="os" value="windows"/>-->
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="testCases.OpenCart.AccountRegistrationTestCase.TC001_AccountRegistrationTest"/>
-            <class name="testCases.OpenCart.LoginTestCase.TC001_LoginTest"></class>
-            <class name="testCases.OpenCart.LoginTestCase.TC_LF_002"></class>
-            <class name="testCases.OpenCart.LoginTestCase.TC_LF_003"></class>
-            <class name="testCases.OpenCart.LoginTestCase.TC_LF_004"></class>
-            <class name="testCases.OpenCart.LoginTestCase.TC_LF_005"></class>
-            <class name="testCases.OpenCart.LoginTestCase.TC_LF_006"></class>
-            <class name="testCases.OpenCart.LoginTestCase.TC_LF_007"></class>
-            <class name="testCases.OpenCart.LoginTestCase.TC_LF_008"></class>
+
+            <class name="testCases.OpenCart.LoginTestCase.login_DataDriven"></class>
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC001_LoginTest"></class>-->
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_002"></class>-->
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_003"></class>-->
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_004"></class>-->
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_005"></class>-->
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_006"></class>-->
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_007"></class>-->
+<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_008"></class>-->
         </classes>
     </test>
     <!--    <test name="Login Tests - Edge">-->
@@ -23,11 +24,4 @@
     <!--            <class name="testCases.OpenCart.AccountRegistrationTestCase.TC001_AccountRegistrationTest"/>-->
     <!--        </classes>-->
     <!--    </test>-->
-
-    <test name="AccountRegistration TestCase" thread-count="5">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="testCases.OpenCart.AccountRegistrationTestCase.TC001_AccountRegistrationTest"></class>
-        </classes>
-    </test>
 </suite>

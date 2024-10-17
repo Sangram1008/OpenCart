@@ -4,16 +4,16 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import testCases.OpenCart.baseClass;
+import testBase.BaseClass;
 import testCases.OpenCart.constantText.textFile;
 
-public class TC_LF_005 extends baseClass {
+public class TC_LF_005 extends BaseClass {
 
     textFile tf;
     HomePage hp;
     LoginPage lp;
 
-    @Test
+    @Test(groups = "Master")
     public void validate_logging_without_providing_any_credentials() {
         logger.info("******* Starting TC_LF_005 *******");
 
