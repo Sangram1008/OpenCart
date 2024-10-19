@@ -17,7 +17,7 @@ public class login_DataDriven extends BaseClass {
     // dataProviders.class is used because it is used in other class
     @Test(dataProvider = "LoginData", dataProviderClass = dataProviders.class)
     // getting data provider from different class
-    public void verify_loginDDT(String email, String pwd, String exp) throws InterruptedException {
+    public void verify_loginDDT(String email, String pwd, String exp) {
         logger.info("***** stating login_DataDriven ******");
 
         try {
@@ -27,7 +27,7 @@ public class login_DataDriven extends BaseClass {
             hp.clickLogin();
 
             lp = new LoginPage(driver);
-            lp.login(email);
+            lp.setUserName(email);
             lp.password(pwd);
             lp.loginButton();
 

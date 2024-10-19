@@ -25,7 +25,7 @@ public class TC_LF_005 extends BaseClass {
 
             hp.clickMyAccount();
             hp.clickLogin();
-            lp.login("");
+            lp.setUserName("");
             lp.password("");
             lp.loginButton();
 

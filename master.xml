@@ -21,6 +21,12 @@
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_006"></class>
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_007"></class>
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_008"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_009"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_010"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_012"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_013"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_014"></class>
+            <class name="testCases.OpenCart.LoginTestCase.TC_LF_015"></class>
         </classes>
 
     </test>

@@ -25,7 +25,7 @@ public class TC_LF_002 extends BaseClass {
 
             hp.clickMyAccount();
             hp.clickLogin();
-            lp.login(properties.getProperty("inValidEmail"));
+            lp.setUserName(properties.getProperty("inValidEmail"));
             lp.password(properties.getProperty("inValidPassword"));
             lp.loginButton();
 

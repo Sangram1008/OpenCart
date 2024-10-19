@@ -33,7 +33,7 @@ public class TC_LF_007 extends BaseClass {
             hp.clickMyAccount();
             hp.clickLogin();
 
-            lp.login(properties.getProperty("email"));
+            lp.setUserName(properties.getProperty("email"));
 
             action.keyDown(Keys.TAB).build().perform();
             action.keyUp(Keys.TAB).sendKeys(properties.getProperty("password")).build().perform();

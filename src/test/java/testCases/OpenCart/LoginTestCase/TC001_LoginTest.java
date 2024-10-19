@@ -28,7 +28,7 @@ public class TC001_LoginTest extends BaseClass {
             hp.clickLogin();
 
             waitElement(lp.login_email, 20, "visibility");
-            lp.login(properties.getProperty("email"));
+            lp.setUserName(properties.getProperty("email"));
 
             waitElement(lp.login_password, 20, "visibility");
             lp.password(properties.getProperty("password"));

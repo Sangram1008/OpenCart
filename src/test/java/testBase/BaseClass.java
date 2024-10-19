@@ -10,6 +10,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
 
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -136,5 +141,22 @@ public class BaseClass {
         sourceFile.renameTo(targetFile);
 
         return targetFilePath;
+    }
+
+    public static String getClipboardContents() {
+        try {
+            Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+            return (String) clipboard.getData(DataFlavor.stringFlavor);
+        } catch (UnsupportedFlavorException | IOException ex) {
+            ex.printStackTrace();
+            return "";
+        }
+    }
+
+    // Method to set clipboard content
+    public static void setClipboardContents(String content) {
+        StringSelection stringSelection = new StringSelection(content);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        clipboard.setContents(stringSelection, null);
     }
 }

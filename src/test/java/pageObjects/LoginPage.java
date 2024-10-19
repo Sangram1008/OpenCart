@@ -16,7 +16,7 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//*[@id='input-password']")
     public WebElement login_password;
 
-    @FindBy(xpath = "//*[@value='Login']")
+    @FindBy(xpath = "//input[@value='Login']")
     public WebElement login_btn;
 
     @FindBy(xpath = "//*[@id='account-login']/div[1]")
@@ -31,7 +31,7 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//a[@class='list-group-item'][normalize-space()='Forgotten Password']")
     public WebElement forgetPassWord;
 
-    public void login(String loginValue) {
+    public void setUserName(String loginValue) {
         login_email.sendKeys(loginValue);
     }
 
