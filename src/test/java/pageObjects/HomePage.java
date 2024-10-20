@@ -18,6 +18,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[text()='Login']")
     public WebElement home_Login;
 
+    @FindBy(xpath = "//a[normalize-space()='Continue']")
+    public WebElement newCustomer;
+
     @FindBy(xpath = "//h2[normalize-space()='Returning Customer']")
     public WebElement returningCustomer;
 
@@ -42,5 +45,9 @@ public class HomePage extends BasePage {
 
     public boolean showLoginAttempt(){
         return displayLoginAttempt.isDisplayed();
+    }
+
+    public void clickNewCustomer(){
+        newCustomer.click();
     }
 }

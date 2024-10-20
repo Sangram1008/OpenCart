@@ -36,6 +36,10 @@ public class AccountRegistrationPage extends BasePage {
     @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
     WebElement reg_msgConfirmation;
 
+    @FindBy(xpath = "//h1[normalize-space()='Register Account']")
+    public WebElement reg_registerAccount;
+
+
     public void setRegFirstName(String name) {
         reg_firstName.sendKeys(name);
     }
@@ -95,5 +99,9 @@ public class AccountRegistrationPage extends BasePage {
         } catch (Exception e) {
             return e.getMessage();
         }
+    }
+
+    public boolean displayRegisterAccount(){
+       return reg_registerAccount.isDisplayed();
     }
 }

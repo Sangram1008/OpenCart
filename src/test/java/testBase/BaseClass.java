@@ -69,6 +69,26 @@ public class BaseClass {
         driver.quit();
     }
 
+    public void openBrowserFunction(){
+        driver.get(properties.getProperty("appUrl"));
+    }
+
+    public void closeBrowserFunction() {
+        driver.close();
+    }
+
+    public void navigateBack(){
+        driver.navigate().back();
+    }
+
+    public void navigateForward(){
+        driver.navigate().forward();
+    }
+
+    public void refreshPage(){
+        driver.navigate().refresh();
+    }
+
     public String randomString(int count) {
         return RandomStringUtils.randomAlphabetic(count);
     }

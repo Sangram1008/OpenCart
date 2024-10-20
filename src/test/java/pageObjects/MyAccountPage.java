@@ -14,8 +14,8 @@ public class MyAccountPage extends BasePage {
     @FindBy(xpath = "//h2[text()='My Account']")
     public WebElement myAccountText;
 
-    @FindBy(xpath = "//div[@class='list-group']//a[text()='Logout']")   //added in step6
-    WebElement lnkLogout;
+    @FindBy(xpath = "//div[@class='list-group']//a[text()='Logout']")
+    public WebElement lnkLogout;
 
     public boolean isMyAccountExists() {
         try {
