@@ -1,7 +1,11 @@
 //package testCases.OpenCart.LoginTestCase;
 //
 //import org.openqa.selenium.Cookie;
+//import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 //import org.testng.Assert;
+//import org.testng.annotations.AfterClass;
+//import org.testng.annotations.BeforeClass;
 //import org.testng.annotations.Test;
 //import pageObjects.HomePage;
 //import pageObjects.LoginPage;
@@ -9,19 +13,35 @@
 //import testBase.BaseClass;
 //import testCases.OpenCart.constantText.textFile;
 //
+//import java.io.IOException;
 //import java.util.Set;
 //
-//public class TC_LF_017 extends BaseClass {
+//public class TC_LF_017 {
 //
-//    textFile tf;
+//    textFile tf ;
 //    HomePage hp;
 //    LoginPage lp;
 //    MyAccountPage ap;
+//    BaseClass bc;
+//
+//    WebDriver driver;
+//
+//    @BeforeClass
+//    public void open(){
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        driver.get("https://tutorialsninja.com/demo/");
+//    }
+//
+//    @AfterClass
+//    public void close(){
+//        driver.quit();
+//    }
 //
 //    @Test
-//    public void validateSessionAfterClosingBrowserWithoutLogout() {
+//    public void validateSessionAfterClosingBrowserWithoutLogout() throws IOException {
 //
-//        logger.info("******* Starting TC_LF_017 *******");
+////        logger.info("******* Starting TC_LF_017 *******");
 //
 //        try {
 //            // Step 1: Initialize page objects and utilities
@@ -29,6 +49,7 @@
 //            hp = new HomePage(driver);
 //            lp = new LoginPage(driver);
 //            ap = new MyAccountPage(driver);
+//            bc = new BaseClass();
 //
 //            // Step 2: Open the Application URL and navigate to the Login page
 //           driver.get("https://tutorialsninja.com/demo/");
@@ -44,7 +65,7 @@
 //            Set<Cookie> allCookies = driver.manage().getCookies();
 //
 //            // Step 5: Close the browser
-//            closeBrowserFunction();
+////            closeBrowserFunction();
 //
 //            // Step 6: Reopen the browser and navigate to the Application URL again
 //            driver.get("https://tutorialsninja.com/demo/");
@@ -65,9 +86,9 @@
 //            Assert.assertTrue(checkLogoutOption, "Logged-in session should be maintained, but user is logged out!");
 //
 //        } catch (Exception e) {
-//            logger.error("Exception occurred during session validation: " + e.getMessage());
+//
 //            Assert.fail("Test case failed due to an exception: " + e.getMessage());
 //        }
-//        logger.info("******* Finished TC_LF_017 *******");
+////        logger.info("******* Finished TC_LF_017 *******");
 //    }
 //}

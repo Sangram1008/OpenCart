@@ -21,32 +21,28 @@ import testBase.BaseClass;
 public class ExtentReportUtility implements ITestListener {
 
     public ExtentSparkReporter sparkReporter;
-
-    // Common Info on the Report
     public ExtentReports extent;
-
-    // Create test case entries in the report and update status of the test Method
     public ExtentTest test;
 
     String repName;
 
+    // Called once when the suite starts
     public void onStart(ITestContext testContext) {
-
-        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
+        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // Time stamp
         repName = "Test-Report-" + timeStamp + ".html";
-        sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
+        sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName); // Specify report location
 
-        sparkReporter.config().setDocumentTitle("opencart Automation Report"); // Title of report
-        sparkReporter.config().setReportName("opencart Functional Testing"); // name of the report
+        sparkReporter.config().setDocumentTitle("OpenCart Automation Report"); // Title of the report
+        sparkReporter.config().setReportName("OpenCart Functional Testing"); // Name of the report
         sparkReporter.config().setTheme(Theme.DARK);
 
         extent = new ExtentReports();
         extent.attachReporter(sparkReporter);
-        extent.setSystemInfo("Application", "opencart");
+        extent.setSystemInfo("Application", "OpenCart");
         extent.setSystemInfo("Module", "Admin");
         extent.setSystemInfo("Sub Module", "Customers");
         extent.setSystemInfo("User Name", System.getProperty("user.name"));
-        extent.setSystemInfo("Environemnt", "QA");
+        extent.setSystemInfo("Environment", "QA");
 
         String os = testContext.getCurrentXmlTest().getParameter("os");
         extent.setSystemInfo("Operating System", os);
@@ -60,19 +56,22 @@ public class ExtentReportUtility implements ITestListener {
         }
     }
 
-    public void onTestSuccess(ITestResult result) {
-
-        test = extent.createTest(result.getTestClass().getName());
-        test.assignCategory(result.getMethod().getGroups()); // to display groups in report
-        test.log(Status.PASS, result.getName() + "Test Case got successfully executed");
-
+    // Called at the start of each test method
+    @Override
+    public void onTestStart(ITestResult result) {
+        // Initialize ExtentTest for each test method
+        test = extent.createTest(result.getMethod().getMethodName());
+        test.assignCategory(result.getMethod().getGroups()); // Display groups in report
     }
 
-    public void onTestFailure(ITestResult result) {
-        test = extent.createTest(result.getTestClass().getName());
-        test.assignCategory(result.getMethod().getGroups());
+    // Called when a test method succeeds
+    public void onTestSuccess(ITestResult result) {
+        test.log(Status.PASS, result.getName() + " - Test case executed successfully");
+    }
 
-        test.log(Status.FAIL, result.getName() + "Test Case got failed");
+    // Called when a test method fails
+    public void onTestFailure(ITestResult result) {
+        test.log(Status.FAIL, result.getName() + " - Test case failed");
         test.log(Status.INFO, result.getThrowable().getMessage());
 
         try {
@@ -83,18 +82,18 @@ public class ExtentReportUtility implements ITestListener {
         }
     }
 
+    // Called when a test method is skipped
     public void onTestSkipped(ITestResult result) {
-        test = extent.createTest(result.getTestClass().getName());
-        test.assignCategory(result.getMethod().getGroups());
-        test.log(Status.SKIP, result.getName() + "Test Case got skipped");
+        test.log(Status.SKIP, result.getName() + " - Test case skipped");
         test.log(Status.INFO, result.getThrowable().getMessage());
     }
 
+    // Called after all tests are completed
     public void onFinish(ITestContext testContext) {
-
+        // Flush the report only after all tests have finished
         extent.flush();
 
-        // Automatically Open the report after Execution
+        // Automatically open the report after execution
         String pathOfExtentReport = System.getProperty("user.dir") + "\\reports\\" + repName;
         File extentReport = new File(pathOfExtentReport);
 
@@ -103,26 +102,5 @@ public class ExtentReportUtility implements ITestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-//        try {
-//            URL url = new URL("file:///" + System.getProperty("user.dir") + "\\reports\\" + repName);
-//
-//            // Create the email message
-//
-//            ImageHtmlEmail email = new ImageHtmlEmail();
-//            email.setDataSourceResolver(new DataSourceUrlResolver(url));
-//            email.setHostName("smtp.googlemail.com");
-//            email.setSmtpPort(465);
-//            email.setAuthenticator(new DefaultAuthenticator("michael.smith@fakemail.com", "password"));
-//            email.setSSLOnConnect(true);
-//            email.setFrom("michael.smith@fakemail.com"); //Sender
-//            email.setSubject("Test Results");
-//            email.setMsg("Please find Attached Report....");
-//            email.addTo(""); //Receiver common Id to all
-//            email.attach(url, "extent report", "please check report...");
-//            email.send(); // send the email
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
     }
 }
