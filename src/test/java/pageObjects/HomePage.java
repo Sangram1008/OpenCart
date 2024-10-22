@@ -43,11 +43,11 @@ public class HomePage extends BasePage {
         return returningCustomer.isDisplayed();
     }
 
-    public boolean showLoginAttempt(){
+    public boolean showLoginAttempt() {
         return displayLoginAttempt.isDisplayed();
     }
 
-    public void clickNewCustomer(){
+    public void clickNewCustomer() {
         newCustomer.click();
     }
 }

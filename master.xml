@@ -7,11 +7,10 @@
         <listener class-name="utilites.ExtentReportUtility"/>
     </listeners>
 
-    <test name="Test" thread-count="5">
+    <test name="LoginTestCase" thread-count="5">
 
         <!--        <parameter name="os" value="Windows"></parameter>-->
         <parameter name="browser" value="chrome"></parameter>
-
         <classes>
             <class name="testCases.OpenCart.LoginTestCase.TC001_LoginTest"></class>
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_002"></class>
@@ -27,9 +26,16 @@
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_013"></class>
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_014"></class>
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_015"></class>
-<!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_017"></class>-->
+            <!--            <class name="testCases.OpenCart.LoginTestCase.TC_LF_017"></class>-->
             <class name="testCases.OpenCart.LoginTestCase.TC_LF_019"></class>
-        </classes>
 
+
+            <!-- Account Registration Test Cases -->
+            <class name="testCases.OpenCart.AccountRegistrationTestCase.TC001_AccountRegistrationTest"></class>
+            <class name="testCases.OpenCart.AccountRegistrationTestCase.TC_RF_004"></class>
+            <class name="testCases.OpenCart.AccountRegistrationTestCase.TC_RF_005"></class>
+        </classes>
     </test>
+
+
 </suite>

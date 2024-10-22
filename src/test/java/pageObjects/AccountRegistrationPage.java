@@ -30,14 +30,34 @@ public class AccountRegistrationPage extends BasePage {
     @FindBy(xpath = "//input[@name='agree']")
     public WebElement reg_agree;
 
-    @FindBy(xpath="//input[@value='Continue']")
+    @FindBy(xpath = "//input[@value='Continue']")
     public WebElement reg_continue;
+
+    @FindBy(xpath = "//div[contains(text(),'First Name must be between 1 and 32 characters!')]")
+    public WebElement inValidFirstName;
+
+    @FindBy(xpath = "//div[contains(text(),'Last Name must be between 1 and 32 characters!')]")
+    public WebElement inValidLastName;
+
+    @FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
+    public WebElement inValidEmail;
+
+    @FindBy(xpath = "//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")
+    public WebElement inValidTelephone;
+
+    @FindBy(xpath = "//div[contains(text(),'Password must be between 4 and 20 characters!')]")
+    public WebElement inValidPassword;
+
+    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+    public WebElement privacyErrorMsg;
 
     @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
     WebElement reg_msgConfirmation;
 
     @FindBy(xpath = "//h1[normalize-space()='Register Account']")
     public WebElement reg_registerAccount;
+    @FindBy(xpath = "//a[normalize-space()='Continue']")
+    public WebElement clickAccountCreatedContinue;
 
 
     public void setRegFirstName(String name) {
@@ -101,7 +121,35 @@ public class AccountRegistrationPage extends BasePage {
         }
     }
 
-    public boolean displayRegisterAccount(){
-       return reg_registerAccount.isDisplayed();
+    public boolean displayRegisterAccount() {
+        return reg_registerAccount.isDisplayed();
+    }
+
+    public boolean isInValidFirstNameDisplay() {
+        return inValidFirstName.isDisplayed();
+    }
+
+    public boolean isInValidLastNameDisplay() {
+        return inValidLastName.isDisplayed();
+    }
+
+    public boolean isInValidEmailDisplay() {
+        return inValidEmail.isDisplayed();
+    }
+
+    public boolean isInValidTelephoneDisplay() {
+        return inValidTelephone.isDisplayed();
+    }
+
+    public boolean isInValidPasswordDisplay() {
+        return inValidPassword.isDisplayed();
+    }
+
+    public boolean isPrivacyErrorMsgDisplay() {
+        return privacyErrorMsg.isDisplayed();
+    }
+
+    public void clickAccountCreatedContinue(){
+        clickAccountCreatedContinue.click();
     }
 }
