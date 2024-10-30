@@ -8,11 +8,12 @@ pool:
   vmImage: 'windows-latest'  # Or use 'ubuntu-latest' if preferred
 
 steps:
-# Install Java with specified architecture
+# Install Java with specified architecture and source
 - task: JavaToolInstaller@1
   inputs:
     versionSpec: '11'                  # Specify the Java version you need
-    jdkArchitectureOption: 'x86'       # Set architecture (x64 or x86)
+    jdkArchitectureOption: 'x64'       # Set architecture (x64 or x86)
+    jdkSourceOption: 'PreInstalled'     # Use the pre-installed JDK on the agent
     cleanDestinationDirectory: true
 
 # Build the project using Maven
