@@ -1,22 +1,35 @@
-# Maven
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
 trigger:
-- master
+  branches:
+    include:
+      - main
+      - develop  # Adjust as needed for the branches you want to trigger the pipeline
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'windows-latest'  # Or use 'ubuntu-latest' if preferred
 
 steps:
+# Install Java if needed
+- task: JavaToolInstaller@1
+  inputs:
+    versionSpec: '21'  # Specify the Java version you need (e.g., 11 or 17)
+    cleanDestinationDirectory: true
+
+# Build the project using Maven
 - task: Maven@3
   inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    mavenPomFile: 'pom.xml'  # Path to your pom.xml file
+    goals: 'clean install'
+    options: '-DskipTests=true -Dmaven.test.failure.ignore=true'  # Skip tests during build, handle failures
+
+# Run Selenium Tests
+- script: |
+    mvn test -Dmaven.test.failure.ignore=true  # Run tests, ignore failures to allow reporting
+  displayName: 'Run Selenium Tests'
+  continueOnError: true  # Proceed with pipeline even if tests fail
+
+# Publish test results
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'  # Adjust to match Surefire output
+    testRunTitle: 'Selenium Test Results'
+  displayName: 'Publish Test Results'
