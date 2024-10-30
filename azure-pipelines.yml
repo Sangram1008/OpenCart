@@ -17,16 +17,13 @@ steps:
     cleanDestinationDirectory: true
 
 # Build the project using Maven
-- task: Maven@4
+- task: VSTest@3
   inputs:
-    mavenPomFile: 'pom.xml'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
-    mavenAuthenticateFeed: false
-    effectivePomSkip: false
-    sonarQubeRunAnalysis: false'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\bin\**\*test.dll
+      **\bin\**\*tests.dll
+    searchFolder: '$(System.DefaultWorkingDirectory)'
 
 # Run Selenium Tests
 - script: |
