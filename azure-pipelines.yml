@@ -17,12 +17,16 @@ steps:
     cleanDestinationDirectory: true
 
 # Build the project using Maven
-- task: Maven@3
+- task: Maven@4
   inputs:
-    mavenPomFile: 'pom.xml'            # Path to your pom.xml file
-    goals: 'clean install'
-    options: '-DskipTests=true -Dmaven.test.failure.ignore=true'
-  displayName: 'Build with Maven'
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false'
 
 # Run Selenium Tests
 - script: |
@@ -36,3 +40,5 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     testRunTitle: 'Selenium Test Results'
   displayName: 'Publish Test Results'
+
+
