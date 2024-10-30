@@ -17,25 +17,16 @@ steps:
     cleanDestinationDirectory: true
 
 # Build the project using Maven
-- task: VSTest@3
+- task: Maven@3
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: |
-      **\bin\**\*test.dll
-      **\bin\**\*tests.dll
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-
-# Run Selenium Tests
-- script: |
-    mvn test -Dmaven.test.failure.ignore=true
-  displayName: 'Run Selenium Tests'
-  continueOnError: true
+    mavenPomFile: 'pom.xml'            # Path to your pom.xml file
+    goals: 'clean test'                 # Run tests during the build
+    options: '-Dmaven.test.failure.ignore=true'  # Ignore test failures
+  displayName: 'Build with Maven'
 
 # Publish test results
 - task: PublishTestResults@2
   inputs:
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    testResultsFiles: '**/target/surefire-reports/TEST-*.xml'  # Adjust to match the path of Surefire reports
     testRunTitle: 'Selenium Test Results'
   displayName: 'Publish Test Results'
-
-
