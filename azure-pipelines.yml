@@ -12,7 +12,7 @@ steps:
 - task: JavaToolInstaller@1
   inputs:
     versionSpec: '11'                  # Specify the Java version you need
-    jdkArchitectureOption: 'x64'       # Set architecture (x64 or x86)
+    jdkArchitectureOption: 'x86'       # Set architecture (x64 or x86)
     cleanDestinationDirectory: true
 
 # Build the project using Maven
