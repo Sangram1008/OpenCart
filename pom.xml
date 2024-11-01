@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -21,10 +21,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.1</version> <!-- Use the latest version -->
                 <configuration>
-                    <includes>
-                        <include>**/*Test.java</include> <!-- Include test classes -->
-                    </includes>
-                    <testFailureIgnore>true</testFailureIgnore> <!-- Optional: Continue build even if tests fail -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>master.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+<!--                    <testFailureIgnore>true</testFailureIgnore> &lt;!&ndash; Optional: Continue build even if tests fail &ndash;&gt;-->
                 </configuration>
             </plugin>
         </plugins>
@@ -75,7 +75,6 @@
             <artifactId>log4j-slf4j-impl</artifactId>
             <version>2.23.1</version>
         </dependency>
-
 
 
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->

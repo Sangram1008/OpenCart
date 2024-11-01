@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
@@ -48,9 +49,9 @@ public class BaseClass {
             case "chrome":
                 driver = new ChromeDriver();
                 break;
-//            case "edge":
-//                driver = new EdgeDriver();
-//                break;
+            case "edge":
+                driver = new EdgeDriver();
+                break;
             default:
                 System.out.println("Invalid browser..");
                 return;
