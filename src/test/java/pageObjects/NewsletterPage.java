@@ -22,6 +22,9 @@ public class NewsletterPage extends BasePage {
     @FindBy(xpath = "//input[@value='1']")
     public WebElement yesNewsletterSubscription;
 
+    @FindBy(xpath = " //input[@value='0']")
+    public WebElement noNewsletterSubscription;
+
     public void clickYesNewsletter(){
         reg_YesNewsletter.click();
     }
@@ -36,5 +39,9 @@ public class NewsletterPage extends BasePage {
 
     public boolean checkYesNewsletterSubscription(){
       return yesNewsletterSubscription.isSelected();
+    }
+
+    public boolean checkNoNewsletterSubscription(){
+        return noNewsletterSubscription.isSelected();
     }
 }
