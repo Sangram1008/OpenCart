@@ -9,7 +9,6 @@
 
     <test name="LoginTestCase" thread-count="5">
 
-        <!--        <parameter name="os" value="Windows"></parameter>-->
         <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name="testCases.OpenCart.LoginTestCase.TC001_LoginTest"></class>
@@ -35,8 +34,7 @@
             <class name="testCases.OpenCart.AccountRegistrationTestCase.TC_RF_004"></class>
             <class name="testCases.OpenCart.AccountRegistrationTestCase.TC_RF_005"></class>
             <class name="testCases.OpenCart.AccountRegistrationTestCase.TC_RF_006"></class>
+            <class name="testCases.OpenCart.AccountRegistrationTestCase.TC_RF_007"></class>
         </classes>
     </test>
-
-
 </suite>
