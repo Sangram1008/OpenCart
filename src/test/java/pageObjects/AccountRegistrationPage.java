@@ -48,6 +48,9 @@ public class AccountRegistrationPage extends BasePage {
     @FindBy(xpath = "//div[contains(text(),'Password must be between 4 and 20 characters!')]")
     public WebElement inValidPassword;
 
+    @FindBy(xpath = "//*[@id='content']/form/fieldset[2]/div[2]/div/div")
+    public WebElement inValidConfirmationPassword;
+
     @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
     public WebElement privacyErrorMsg;
 
@@ -143,6 +146,10 @@ public class AccountRegistrationPage extends BasePage {
 
     public boolean isInValidPasswordDisplay() {
         return inValidPassword.isDisplayed();
+    }
+
+    public boolean inValidConfirmationPassWord(){
+        return inValidConfirmationPassword.isDisplayed();
     }
 
     public boolean isPrivacyErrorMsgDisplay() {

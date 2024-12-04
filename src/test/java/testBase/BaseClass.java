@@ -49,12 +49,12 @@ public class BaseClass {
             case "chrome":
                 driver = new ChromeDriver();
                 break;
-            case "edge":
-                driver = new EdgeDriver();
-                break;
-            default:
-                System.out.println("Invalid browser..");
-                return;
+//            case "edge":
+//                driver = new EdgeDriver();
+//                break;
+//            default:
+//                System.out.println("Invalid browser..");
+//                return;
         }
 
         driver.manage().deleteAllCookies();
