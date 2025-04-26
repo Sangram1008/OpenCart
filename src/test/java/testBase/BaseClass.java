@@ -180,4 +180,18 @@ public class BaseClass {
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         clipboard.setContents(stringSelection, null);
     }
+
+    // Method to Convert the rgba To Hex code
+    public static String rgbaToHex(String rgba) {
+        // Extract numbers from rgba format (e.g., "rgba(13, 110, 253, 1)")
+        rgba = rgba.replace("rgba(", "").replace(")", "");
+        String[] values = rgba.split(", ");
+
+        int r = Integer.parseInt(values[0]);
+        int g = Integer.parseInt(values[1]);
+        int b = Integer.parseInt(values[2]);
+
+        // Convert to Hex format
+        return String.format("#%02x%02x%02x", r, g, b);
+    }
 }
