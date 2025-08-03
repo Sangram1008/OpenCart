@@ -40,9 +40,11 @@ public class TC_LF_010 extends BaseClass {
 
             driver.navigate().back();
 
-            boolean returningCustomerText = hp.getTextReturningCustomer();
+            boolean isLoggedOut = hp.getTextReturningCustomer();
 
-            Assert.assertTrue(returningCustomerText, "After logout and clicked button then should not logout");
+            if (!isLoggedOut) {
+                Assert.fail("FAILED: After logout and navigating back, user is still logged in!");
+            }
 
         } catch (Exception e) {
             Assert.fail();

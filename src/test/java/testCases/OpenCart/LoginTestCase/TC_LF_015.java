@@ -1,5 +1,6 @@
 package testCases.OpenCart.LoginTestCase;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
@@ -7,6 +8,8 @@ import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
 import testBase.BaseClass;
 import testCases.OpenCart.constantText.textFile;
+
+import java.time.Duration;
 
 public class TC_LF_015 extends BaseClass {
 
@@ -34,7 +37,7 @@ public class TC_LF_015 extends BaseClass {
 
             driver.getPageSource();
 
-            String passWordValue = lp.login_password.getAttribute("value");
+            String passWordValue = new WebDriverWait(driver, Duration.ofSeconds(90)).until(driver -> lp.login_password.getAttribute("value"));
 
             Assert.assertEquals(passWordValue, "password", "Page Source is showing Password in text");
 

@@ -1,5 +1,6 @@
 package testCases.OpenCart.LoginTestCase;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
@@ -39,7 +40,10 @@ public class TC_LF_012 extends BaseClass {
             for (int i = 0; i < 5; i++) {
 
                 lp.loginButton();
-                boolean checkErrorText = lp.checkErrorText(tf.loginErrorText);
+
+                boolean checkErrorText = new WebDriverWait(driver, Duration.ofSeconds(10))
+                        .until(driver -> lp.checkErrorText(tf.loginErrorText));
+
                 Assert.assertTrue(checkErrorText, "Error message not displayed after login attempt " + (i + 1));
             }
 
